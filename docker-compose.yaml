@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  curl:
+    container_name: curl-wrapper
+    build: .
+    environment:
+      URL: https://docker.requestcatcher.com/api/put
+      HEADER: |
+        Content-Type: application/json
+      DATA: |
+        "[{\"metric\":\"cpu_temperature\",\"value\":\"$$(cat /cpu/temps)\"}]"
+    volumes:
+      - /tmp/temps:/cpu/temps:ro
