@@ -6,5 +6,13 @@
   "dependencyDashboardTitle": "Renovate Dashboard 🤖",
   "ignorePaths": [
       ".github/workflows"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
+      "automergeSchedule": ["after 10pm and before 5:00am"]
+    }
   ]
+  
 }
