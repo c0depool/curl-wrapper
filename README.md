@@ -1,3 +1,13 @@
+
+<div align="center">
+
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/c0depool/curl-wrapper?sort=semver&style=for-the-badge)
+
+[![Lines of code](https://img.shields.io/tokei/lines/github.com/c0depool/curl-wrapper.git?style=for-the-badge)](https://github.com/c0depool/curl-wrapper)
+
+</div>
+
+
 # cURL Wrapper in Docker
 
 Simple wrapper for cURL to periodically execute HTTP requests with support for complex HTTP payloads.
