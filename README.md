@@ -9,7 +9,7 @@ Simple HTTP Request to example.com every 10 seconds:
 ```bash
 docker run -e URL=https://example.com \
 -e INTERVAL=10 \
-codepool/curl-wrapper:v0.0.1
+ghcr.io/c0depool/curl-wrapper
 ```
 
 A complex HTTP request with json payload using docker compose:
@@ -19,7 +19,7 @@ version: "3.9"
 services:
   curl:
     container_name: curl-wrapper
-    image: codepool/curl-wrapper:v0.0.1
+    image: ghcr.io/c0depool/curl-wrapper
     environment:
       URL: https://example.com/api
       METHOD: PUT
