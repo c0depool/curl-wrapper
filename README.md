@@ -5,7 +5,6 @@
 
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/c0depool/curl-wrapper/Docker?style=for-the-badge)](https://github.com/c0depool/curl-wrapper/actions/workflows/docker-publish.yml)
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/c0depool/curl-wrapper?sort=semver&style=for-the-badge)](https://github.com/c0depool/curl-wrapper/releases)
-[![Lines of code](https://img.shields.io/tokei/lines/github.com/c0depool/curl-wrapper.git?style=for-the-badge)](https://github.com/c0depool/curl-wrapper)
 
 </div>
 
