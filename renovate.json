@@ -4,9 +4,6 @@
     "config:base"
   ],
   "dependencyDashboardTitle": "Renovate Dashboard 🤖",
-  "ignorePaths": [
-      ".github/workflows"
-  ],
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
