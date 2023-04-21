@@ -75,9 +75,9 @@ jobs:
       # repository is public to avoid leaking data.  If you would like to publish
       # transparency data even for private images, pass --force to cosign below.
       # https://github.com/sigstore/cosign
-      - name: cosign-installer
+      - name: Install Cosign
         uses: sigstore/cosign-installer@v2.0.0
-              
+
       - name: Write signing key to disk
         run: 'echo "$KEY" > cosign.key'
         shell: bash
@@ -87,7 +87,6 @@ jobs:
       - name: Sign the published Docker image
         if: ${{ github.event_name != 'pull_request' }}
         env:
-          COSIGN_EXPERIMENTAL: "true"
           COSIGN_PASSWORD: ${{ secrets.COSIGN_PASSWORD }}
         # This step uses the identity token to provision an ephemeral certificate
         # against the sigstore community Fulcio instance.
