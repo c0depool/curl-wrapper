@@ -76,9 +76,11 @@ jobs:
       # transparency data even for private images, pass --force to cosign below.
       # https://github.com/sigstore/cosign
       - name: Install Cosign
+        if: ${{ github.event_name != 'pull_request' }}      
         uses: sigstore/cosign-installer@v2.0.0
 
       - name: Write signing key to disk
+        if: ${{ github.event_name != 'pull_request' }}      
         run: 'echo "$KEY" > cosign.key'
         shell: bash
         env:
