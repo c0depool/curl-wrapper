@@ -1,4 +1,4 @@
-FROM alpine:3.17
+FROM alpine:3.24
 
 ENV INTERVAL 30
 ENV METHOD GET
